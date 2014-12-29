@@ -1,3 +1,4 @@
+
 def deduplicate(attendee_list1, attendee_list2):
 	with open(attendee_list1, "r") as attendee_list1:
 		attendee_list1 = attendee_list1.read()
@@ -10,4 +11,5 @@ def deduplicate(attendee_list1, attendee_list2):
 	master_list.extend(attendee_list2)
 	master_list = list(set(master_list))
 	return master_list
-	# = list(set(master_list))
+
+print deduplicate("film_attendees.txt", "hh_attendees.txt")
